@@ -1,4 +1,4 @@
-# 带图片的动态评论爬取
+# 带图片的动态评论爬取，oid用https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/get_dynamic_detail?dynamic_id=动态url后几位数字获取，返回的rid就是所需要的oid
 import re
 import time
 import urllib.request
