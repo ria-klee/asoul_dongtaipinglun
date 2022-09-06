@@ -7,3 +7,6 @@
 ### 带图动态的评论跳转以2022/08/23泠鸢yousa 的合作动态为例（https://t.bilibili.com/697547811817783319 ）
 #### ①用https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/get_dynamic_detail?dynamic_id=697547811817783319 获取带图动态的oid，data--card--desc--rid就是该动态的oid
 #### ②用https://api.bilibili.com/x/v2/reply?jsonp=jsonp&pn=0&type=11&oid=204927380&sort=2 获取热门动态，可以看到第一条就是嘉然的回复且data--replies--0中含有rpid：127041315696和oid：204927380，再使用这两个参数的具体数值就可以得到回复的跳转链接：https://www.bilibili.com/h5/comment/sub?oid=204927380&pageType=11&root=127041315696
+--- 
+### 视频的评论跳转以2022/09/05的MMD为例( https://www.bilibili.com/video/BV15g411S7px ) 
+#### 运行bvhuifu.py得到然然回复的rpid和视频av号，分别是129001544592和515230966,所以该评论的跳转链接为https://www.bilibili.com/h5/comment/sub?oid=515230966&pageType=1&root=129001544592
