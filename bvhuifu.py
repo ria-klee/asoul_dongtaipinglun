@@ -49,6 +49,7 @@ print('评论已经爬取完成')
 comment_txt = open(Folderpath + '\\huifu.txt', 'w',
                    encoding='utf-8')  # 创建txt文本
 
+comment_txt.write("AV number is:%s\n" %av)
 for r in comment_list:
     comment_txt.write(str(r))  # 写入txt文本
     comment_txt.write('\n')
